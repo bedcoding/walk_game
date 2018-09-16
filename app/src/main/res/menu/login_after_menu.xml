@@ -3,6 +3,6 @@
 
     <item
         android:id="@+id/course_rank"
-        android:title="인기 코스" />
+        android:title="인기코스" />
 
 </menu>

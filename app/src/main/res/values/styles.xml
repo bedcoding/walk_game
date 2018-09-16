@@ -22,8 +22,9 @@
         <item name="android:windowCloseOnTouchOutside">true</item>
     </style>
 
+<!--
 
-    <!-- 생활지수 오픈소스 합치기 -->
+    &lt;!&ndash; 생활지수 오픈소스 합치기 &ndash;&gt;
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -39,12 +40,13 @@
     </style>
 
 
-    <!-- 두번째 오픈소스 합치기 -->
+    &lt;!&ndash; 두번째 오픈소스 합치기 &ndash;&gt;
     <style name="NoActionbarTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+-->
 
 </resources>

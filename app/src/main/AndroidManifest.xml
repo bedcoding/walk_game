@@ -71,7 +71,6 @@
             android:name=".ahn1.Pop"
             android:theme="@style/AppTheme.Pop" />
         <activity android:name=".phu1.FirstActivity" />
-        <activity android:name=".phu1.NormalMode" />
         <activity android:name=".phu1.LoggedInWalk" />
         <activity android:name=".phu1.LoggedInRecord" />
         <activity android:name=".phu1.SettingActivity" />

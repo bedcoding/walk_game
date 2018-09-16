@@ -16,8 +16,6 @@ import android.widget.RadioGroup;
 
 import com.example.ggavi.registeration.R;
 import com.example.ggavi.registeration.ahn1.MainActivity;
-import com.example.ggavi.registeration.lee1.SmsMainActivity;
-import com.example.ggavi.registeration.lee2.bluegetheart;
 
 public class SettingActivity extends AppCompatActivity {
 
@@ -55,7 +53,7 @@ public class SettingActivity extends AppCompatActivity {
             }
         });
 
-
+/*
         // 두번째 버튼: 전송할 전화번호 설정
         BlueTooth = (Button) findViewById(R.id.BlueTooth);
         BlueTooth.setTypeface(font_two);
@@ -67,7 +65,9 @@ public class SettingActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        */
 
+/*
 
         // 세번째 버튼: 심박수 블루투스 연결
         SMS_setting = (Button) findViewById(R.id.SMS_setting);
@@ -80,6 +80,7 @@ public class SettingActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+*/
 
 
         propicsetting = (Button) findViewById(R.id.propicsetting);

@@ -298,7 +298,7 @@ public class LoggedInWalk extends AppCompatActivity implements OnMapReadyCallbac
         }
 
 
-
+/*
         // 심박수 측정 추가 BTHeartRate
         // 블루투스 음악 관련 것들
         mEditReceive = (TextView)findViewById(R.id.heartrateL);
@@ -342,6 +342,7 @@ public class LoggedInWalk extends AppCompatActivity implements OnMapReadyCallbac
                 startBT_Dialog.show();
             }
         });
+*/
 
         //-------------메세지에 위치정보 더하기
         geocoder = new Geocoder(this);//위도 경도를 입력해서 주소 받기 위한것.
@@ -862,7 +863,6 @@ if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_F
                     totalDistance += dis / 1000; //showing distance in km (km단위로 보여주기)
                     totalDistance_hidden += dis;
                     distanceTv.setText(" " + kmFormat.format(totalDistance));
-                    //  Toast.makeText(NormalMode.this, "DISTANCE HIDDEN>>" + (int) totalDistance_hidden, Toast.LENGTH_SHORT).show();
 
                     if (isGoalEntered) {
                         Double percentage = (100 * totalDistance) / goal;

@@ -42,14 +42,17 @@ public class FirstActivity extends AppCompatActivity {
         walkAwayTitle.setTypeface(font_one);
 
 
+        // 노말 모드 제거
+/*
         normalModeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), NormalMode.class);
+                Intent intent = new Intent(view.getContext(), 노말모드.class);
                 startActivityForResult(intent, 0);
                 finish();
             }
         });
+*/
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override

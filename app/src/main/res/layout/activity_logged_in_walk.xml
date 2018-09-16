@@ -251,48 +251,6 @@
             android:layout_margin="5dp"
             android:clickable="true"
             android:enabled="true" />
-
-        <!-- Lower Bar For Status-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:baselineAligned="false"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:background="@color/colorBackground">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="end"
-                android:orientation="vertical">
-
-                <ImageButton
-                    android:id="@+id/heartPicL"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:contentDescription="heart_image"
-                    android:padding="5dp"
-                    android:background="@drawable/heart" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/heartrateL"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:fontFamily="sans-serif-condensed"
-                    android:gravity="start|center"
-                    android:text=" Heart Rate"
-                    android:textColor="#ffffff"
-                    android:textSize="28sp" />
-            </LinearLayout>
-        </LinearLayout>
     </LinearLayout>
 
 
