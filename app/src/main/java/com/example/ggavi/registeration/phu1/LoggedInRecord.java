@@ -22,11 +22,6 @@ import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
 import com.example.ggavi.registeration.R;
 import com.example.ggavi.registeration.ahn1.MainActivity;
-import com.example.ggavi.registeration.ahn2.open1_Main1;
-import com.example.ggavi.registeration.ahn2.open1_Main2;
-import com.example.ggavi.registeration.ahn2.open1_Main3;
-import com.example.ggavi.registeration.ahn3.open2_PlaceActivity;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
 

@@ -76,64 +76,7 @@
         <activity android:name=".phu1.LoggedInRecord" />
         <activity android:name=".phu1.SettingActivity" />
 
-        <!-- 생활지수 오픈소스 합치기 -->
-        <activity
-            android:name=".ahn2.open1_Main1"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".ahn2.open1_Main2"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".ahn2.open1_Main3"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".ahn2.LifeJisu_MainActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
 
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data
-                    android:host="@string/kakaolink_host"
-                    android:scheme="@string/kakao_scheme" />
-            </intent-filter>
-        </activity>
-
-        <meta-data
-            android:name="com.kakao.sdk.AppKey"
-            android:value="@string/kakao_app_key" />
-
-        <receiver android:name=".ahn2.mosquitoAppWidget">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.appwidget.provider"
-                android:resource="@xml/mosquito_app_widget_info" />
-        </receiver>
-
-        <!-- 두번째 오픈소스 합치기 -->
-
-        <activity
-            android:name=".ahn3.open2_PlaceActivity"
-            android:label="Place"
-            android:theme="@style/NoActionbarTheme" />
-        <activity
-            android:name=".ahn3.open2_PlaceThirdActivity"
-            android:label="Place 액티비티" />
-        <activity
-            android:name=".ahn3.open2_PlaceThirdActivity2"
-            android:label="Place 액티비티" />
-        <activity
-            android:name=".ahn3.open2_PlaceThirdActivity3"
-            android:label="Place 액티비티" />
 
         <!-- 반장님 코드 합침 -->
         <activity android:name=".lee1.SmsMainActivity" />

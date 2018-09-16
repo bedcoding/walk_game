@@ -2,22 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/open1_weather"
-        android:title= "바깥 정보"/>
-
-    <item
-        android:id="@+id/open1_mosquito"
-        android:title= "모기 정보"/>
-
-    <item
-        android:id="@+id/open1_air"
-        android:title= "대기 정보"/>
-
-    <item
-        android:id="@+id/open2_Place"
-        android:title="추천 코스" />
-
-    <item
         android:id="@+id/course_rank"
         android:title="인기 코스" />
 

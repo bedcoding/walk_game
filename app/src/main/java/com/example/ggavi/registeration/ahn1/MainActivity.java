@@ -33,10 +33,6 @@ import android.widget.Toast;
 
 
 import com.example.ggavi.registeration.R;
-import com.example.ggavi.registeration.ahn2.open1_Main1;
-import com.example.ggavi.registeration.ahn2.open1_Main2;
-import com.example.ggavi.registeration.ahn2.open1_Main3;
-import com.example.ggavi.registeration.ahn3.open2_PlaceActivity;
 import com.example.ggavi.registeration.phu1.DownloadImageTask;
 import com.example.ggavi.registeration.phu1.FirstActivity;
 import com.example.ggavi.registeration.phu1.Fragment_loggedInRecord;
@@ -518,30 +514,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onOptionsItemSelected(MenuItem item) {
 
         switch (item.getItemId()) {
-
-            // 1번째 버튼: 바깥 환경
-            case R.id.open1_weather:
-                Intent intent1 = new Intent(getApplicationContext(), open1_Main1.class);
-                startActivity(intent1);
-                return true;
-
-            // 2번째 버튼: 모기 정보
-            case R.id.open1_mosquito:
-                Intent intent2 = new Intent(getApplicationContext(), open1_Main2.class);
-                startActivity(intent2);
-                return true;
-
-            // 3번째 버튼: 공기 오염
-            case R.id.open1_air:
-                Intent intent3 = new Intent(getApplicationContext(), open1_Main3.class);
-                startActivity(intent3);
-                return true;
-
-            // 4번째 버튼
-            case R.id.open2_Place:
-                Intent intent4 = new Intent(getApplicationContext(), open2_PlaceActivity.class);
-                startActivity(intent4);
-                return true;
 
             // 5번째 버튼
             case R.id.course_rank:
