@@ -581,10 +581,13 @@ public class NormalMode extends AppCompatActivity implements OnMapReadyCallback,
         public void onLocationChanged(Location location) {
 
             if (location != null) {
+
+                /*
                 if ((location.getAccuracy() > 15 && this != null)) { //if gps connection is week (gps수신이 약한 경우)
                     //Toast.makeText(NormalMode.this, "GPS 수신이 약하기 때문에 거리 측정이 어렵습니다.", Toast.LENGTH_SHORT).show();
                     //mentioning "GPS connection is week. It is difficult to predict the distance.
                 }
+                */
 
                 if (previousLocation != null/* && location.getAccuracy() < 15*/) { //previous location is not null (이전 위치가 null이 아님)
 
