@@ -37,12 +37,10 @@
                 android:src ="@drawable/defaultpic"/>
 
             <ImageView android:id="@+id/circle_crop"
+                android:layout_gravity="center"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:src="@drawable/rect_crop" />
-
-
-
         </FrameLayout>
 
 

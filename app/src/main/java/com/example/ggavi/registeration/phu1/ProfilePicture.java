@@ -171,7 +171,6 @@ public class ProfilePicture extends AppCompatActivity {
                     object = jsonArray.getJSONObject(0);
 
                     // 공지사항의 Content, Name, Date에 해당하는 값을 가져와라는 뜻
-
                     userId = object.getString("image_tag");
                     image_data = object.getString("image_data");
 
