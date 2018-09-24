@@ -41,7 +41,7 @@ public class RegisterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.login_activity1_register);
         ((AppCompatActivity) RegisterActivity.this).getSupportActionBar().setTitle((Html.fromHtml("<font color='#ffffff'>" + "회원가입" + "</font>")));
         // (2) spinner 얘는 현재 디자인에 있는 majorSpinner 이놈을 그대로 가져올 수 있도록 하고
         // adapter 얘는 values 폴더에 추가한 arrays.xml 얘들을 얻어와서 넣어준다.

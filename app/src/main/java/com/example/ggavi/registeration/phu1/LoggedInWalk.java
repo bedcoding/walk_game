@@ -24,7 +24,6 @@ import android.text.Html;
 import android.util.Log;
 import android.view.Window;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -190,7 +189,7 @@ public class LoggedInWalk extends AppCompatActivity implements OnMapReadyCallbac
         // 상단 액션바(타이틀 바) 없애려고 넣음
         getSupportActionBar().hide();
 
-        setContentView(R.layout.activity_logged_in_walk);
+        setContentView(R.layout.login_activity3_walk);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         Intent intent = getIntent();
@@ -245,7 +244,7 @@ public class LoggedInWalk extends AppCompatActivity implements OnMapReadyCallbac
 
             final Dialog dialog = new Dialog(LoggedInWalk.this); //here, the name of the activity class that you're writing a code in, needs to be replaced
             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE); //for title bars not to be appeared (타이틀 바 안보이게)
-            dialog.setContentView(R.layout.alert_dialog); //setting view
+            dialog.setContentView(R.layout.dialog_alert); //setting view
 
 
             //getting textviews and buttons from dialog
@@ -382,7 +381,7 @@ public class LoggedInWalk extends AppCompatActivity implements OnMapReadyCallbac
                 if (!isTracking) {
                     final Dialog dialog = new Dialog(LoggedInWalk.this);
                     dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-                    dialog.setContentView(R.layout.goal_dialog);
+                    dialog.setContentView(R.layout.dialog_goal);
 
                     dialog.setCanceledOnTouchOutside(false); //to prevent dialog getting dismissed on outside touch
                     dialog.setCancelable(false); //to prevent dialog getting dismissed on back button
@@ -633,7 +632,7 @@ if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_F
                         //displaying distance, kcal, steps etc. (걸어온 거리, 칼로리, 걸음 수 보여줌)
                         final Dialog dialog = new Dialog(LoggedInWalk.this);
                         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-                        dialog.setContentView(R.layout.record_dialog);
+                        dialog.setContentView(R.layout.login_record_dialog);
 
                         TextView dialogSteps = (TextView) dialog.findViewById(R.id.dialogSteps);
                         TextView dialogDistance = (TextView) dialog.findViewById(R.id.dialogDistance);

@@ -3,7 +3,6 @@ package com.example.ggavi.registeration.phu1;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -69,7 +68,7 @@ public class ProfilePictureUpload extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile_picture_upload);
+        setContentView(R.layout.login_activity5_profile_picture_upload);
 
         ((AppCompatActivity) ProfilePictureUpload.this).getSupportActionBar().setTitle((Html.fromHtml("<font color='#ffffff'>" + "프로필 사진 업로드" + "</font>")));
         if (getSupportActionBar() != null) {

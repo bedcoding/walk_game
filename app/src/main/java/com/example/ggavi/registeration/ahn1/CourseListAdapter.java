@@ -79,7 +79,7 @@ public class CourseListAdapter extends BaseAdapter {
     public View getView(final int i, View convertView, ViewGroup viewGroupParent)
     {
         // 하나의 View로 만들어 줄 수 있도록 한다.
-        View v = View.inflate(context, R.layout.course, null);
+        View v = View.inflate(context, R.layout.login2_course, null);
 
 
         // course라는 레이아웃에 있는 모든 원소가 하나의 변수로써 자리잡게 되었다.

@@ -10,9 +10,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.BaseAdapter;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -57,7 +55,7 @@ public class RecordListAdapter extends BaseAdapter {
     public View getView(int i, View convertView, final ViewGroup parent) //i는 position
     {
         // 하나의 View로 만들어 줄 수 있도록 한다. (R.layout.notice로 배달)
-        View v = View.inflate(context, R.layout.logged_in_record_item, null);
+        View v = View.inflate(context, R.layout.login_logged_in_record_item, null);
         TextView pedometer = (TextView) v.findViewById(R.id.pedometerRecord);
         TextView distance = (TextView) v.findViewById(R.id.distanceRecord);
         TextView calorie = (TextView) v.findViewById(R.id.calorieRecord);
@@ -104,7 +102,7 @@ public class RecordListAdapter extends BaseAdapter {
                 //  Toast.makeText(parent.getContext(),datetimeS+" "+userId,Toast.LENGTH_LONG).show();
                 final Dialog dialog = new Dialog(parent.getContext()); //here, the name of the activity class that you're writing a code in, needs to be replaced
                 dialog.requestWindowFeature(Window.FEATURE_NO_TITLE); //for title bars not to be appeared (타이틀 바 안보이게)
-                dialog.setContentView(R.layout.alert_dialog); //setting view
+                dialog.setContentView(R.layout.dialog_alert); //setting view
 
 
                 //getting textviews and buttons from dialog

@@ -21,7 +21,7 @@ public class Course {
     int courseRival;            // (18)경쟁자의 숫자 (수강신청하려는 사람들의 숫자)
 
 
-    // (18) 생성자: statistics.xml에서 필요한 요소들
+    // (18) 생성자: login2_statistics.xml에서 필요한 요소들
     public Course(int courseID, String courseTitle, int courseDivide, String courseGrade, int coursePersonnel, int courseRival) {
         this.courseID = courseID;
         this.courseTitle = courseTitle;

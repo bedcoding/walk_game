@@ -77,16 +77,33 @@
 
 
 
-        <!-- 반장님 코드 합침 -->
-        <activity android:name=".lee1.SmsMainActivity" />
-        <activity android:name=".lee2.bluegetheart" />
-
-        <!-- 푸푸씨꺼 또 합침 -->
+        <!-- 푸푸씨 꺼 또 합침 -->
         <activity android:name=".phu1.ProfilePicture" />
         <activity android:name=".phu1.ProfilePictureUpload" />
 
         <!-- 추가 -->
         <activity android:name=".ahn1.CourseRankActivity" />
+
+
+        <!-- 게임 기능 합체 -->
+        <activity android:name=".Game0_Start" />
+        <activity android:name=".Game1_Day" />
+        <activity android:name=".Game2_Main" />
+        <activity android:name=".Game3_Item" />
+        <activity android:name=".Game4_Run" />
+        <activity
+            android:name=".Game5_EndingVideo"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".Game5_DeadVideo"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".Game5_StartVideo"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
     </application>
 
 </manifest>

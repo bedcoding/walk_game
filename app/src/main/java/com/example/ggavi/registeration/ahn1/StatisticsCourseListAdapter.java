@@ -60,10 +60,10 @@ public class StatisticsCourseListAdapter extends BaseAdapter {
     public View getView(final int i, View convertView, ViewGroup viewGroupParent)
     {
         // 하나의 View로 만들어 줄 수 있도록 한다.
-        View v = View.inflate(context, R.layout.statistics, null);  // statistics.xml
+        View v = View.inflate(context, R.layout.login2_statistics, null);  // login2_statistics.xml
 
 
-        // statistics.xml이라는 레이아웃에 있는 모든 원소가 하나의 변수로써 자리잡게 되었다.
+        // login2_statistics.xml이라는 레이아웃에 있는 모든 원소가 하나의 변수로써 자리잡게 되었다.
         TextView courseTitle = (TextView) v.findViewById(R.id.courseTitle);
         TextView coursePersonnel = (TextView) v.findViewById(R.id.coursePersonnel);
 

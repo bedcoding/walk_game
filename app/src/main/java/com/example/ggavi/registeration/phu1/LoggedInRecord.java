@@ -7,12 +7,9 @@ import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -53,7 +50,7 @@ public class LoggedInRecord extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.logged_in_record);
+        setContentView(R.layout.login_logged_in_record);
         recordListView = (ListView) findViewById(R.id.recordListView);
         ((AppCompatActivity) LoggedInRecord.this).getSupportActionBar().setTitle((Html.fromHtml("<font color='#ffffff'>" + "나의 기록 관리" + "</font>")));
         if (getSupportActionBar() != null){
@@ -230,7 +227,7 @@ public class LoggedInRecord extends AppCompatActivity {
     public void deleteAllRec(){
         final Dialog dialog = new Dialog(LoggedInRecord.this); //here, the name of the activity class that you're writing a code in, needs to be replaced
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE); //for title bars not to be appeared (타이틀 바 안보이게)
-        dialog.setContentView(R.layout.alert_dialog); //setting view
+        dialog.setContentView(R.layout.dialog_alert); //setting view
 
 
         //getting textviews and buttons from dialog

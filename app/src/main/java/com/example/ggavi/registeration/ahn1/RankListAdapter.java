@@ -9,7 +9,6 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.example.ggavi.registeration.R;
-import com.example.ggavi.registeration.ahn1.Course;
 
 import java.util.List;
 
@@ -53,9 +52,9 @@ public class RankListAdapter extends BaseAdapter {
     public View getView(final int i, View view, ViewGroup viewGroup)
     {
         // 가장 먼저 레이아웃에 rank를 매칭시켜준다.
-        View v = View.inflate(context, R.layout.rank, null);  // rank.xml
+        View v = View.inflate(context, R.layout.login2_rank, null);  // login2_rank.xml
 
-        // rank.xml이라는 레이아웃에 있는 모든 원소가 하나의 변수로써 자리잡게 되었다.
+        // login2_rank.xml이라는 레이아웃에 있는 모든 원소가 하나의 변수로써 자리잡게 되었다.
         TextView rankTextView = (TextView) v.findViewById(R.id.rankTextView);
         TextView courseTitle = (TextView) v.findViewById(R.id.courseTitle);
 

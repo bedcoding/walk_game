@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 import android.os.AsyncTask;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -27,7 +26,6 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -44,15 +42,12 @@ import com.example.ggavi.registeration.phu1.SettingActivity;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -74,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.logged_in);
+        setContentView(R.layout.login_logged_in);
         ActionBar actionBar = getSupportActionBar();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -563,7 +558,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void logout() {
         final Dialog dialog = new Dialog(MainActivity.this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE); //for title bars not to be appeared (타이틀 바 안보이게)
-        dialog.setContentView(R.layout.alert_dialog);
+        dialog.setContentView(R.layout.dialog_alert);
 
         TextView dialogTitle = (TextView) dialog.findViewById(R.id.dialogTitle);
         TextView dialogMessage = (TextView) dialog.findViewById(R.id.dialogMessage);

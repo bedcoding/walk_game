@@ -30,7 +30,7 @@ public class SettingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_setting);
+        setContentView(R.layout.login_activity4_setting);
 
         ((AppCompatActivity) SettingActivity.this).getSupportActionBar().setTitle((Html.fromHtml("<font color='#ffffff'>" + "설정" + "</font>")));
 
@@ -121,7 +121,7 @@ public class SettingActivity extends AppCompatActivity {
     public void weightSetting() {
         final Dialog dialog = new Dialog(SettingActivity.this); //here, the name of the activity class that you're writing a code in, needs to be replaced
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE); //for title bars not to be appeared (타이틀 바 안보이게)
-        dialog.setContentView(R.layout.weight_dialog); //setting view
+        dialog.setContentView(R.layout.dialog_weight); //setting view
         dialog.show();
         EditText weightEntered = (EditText) dialog.findViewById(R.id.weightEntered);
         Button submitButton = (Button) dialog.findViewById(R.id.submitButton);

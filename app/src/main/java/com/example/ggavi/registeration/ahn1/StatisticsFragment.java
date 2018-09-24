@@ -114,7 +114,7 @@ public class StatisticsFragment extends Fragment {
 
         // (20) 인기 순위 리스트 만들때 추가한 생성자
         rankSpinner = (Spinner) getView().findViewById(R.id.rankSpinner);
-        rankAdapter = ArrayAdapter.createFromResource(getActivity(), R.array.rank, R.layout.spinner_item);  // res -> spinner_item.xml 파일과 연결
+        rankAdapter = ArrayAdapter.createFromResource(getActivity(), R.array.rank, R.layout.login2_spinner_item);  // res -> login2_spinner_item.xml 파일과 연결
         rankSpinner.setAdapter(rankAdapter);
 
         //rankSpinner.setPopupBackgroundResource(R.color.colorGray);   // 해당 스피너를 선택했을 때 나오는 목록 배경색깔
@@ -682,7 +682,7 @@ public class StatisticsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_statistics, container, false);
+        return inflater.inflate(R.layout.login2_fragment_statistics, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event

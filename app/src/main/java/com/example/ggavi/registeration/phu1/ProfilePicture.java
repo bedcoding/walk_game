@@ -44,7 +44,7 @@ public class ProfilePicture extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile_picture);
+        setContentView(R.layout.login_activity5_profile_picture);
         font_one = Typeface.createFromAsset(getAssets(), "fonts/font_one.ttf"); //TitilliumWeb-Light from Titillium Web by Accademia di Belle Arti di Urbino (1001freefonts.com)
         ((AppCompatActivity) ProfilePicture.this).getSupportActionBar().setTitle((Html.fromHtml("<font color='#ffffff'>" + "프로필 사진 설정" + "</font>")));
         if (getSupportActionBar() != null) {
@@ -192,7 +192,7 @@ public class ProfilePicture extends AppCompatActivity {
                         public void onClick(View view) {
                             final Dialog dialog = new Dialog(ProfilePicture.this); //here, the name of the activity class that you're writing a code in, needs to be replaced
                             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE); //for title bars not to be appeared (타이틀 바 안보이게)
-                            dialog.setContentView(R.layout.alert_dialog); //setting view
+                            dialog.setContentView(R.layout.dialog_alert); //setting view
 
 
                             //getting textviews and buttons from dialog

@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 
 import com.example.ggavi.registeration.R;
-import com.example.ggavi.registeration.phu1.Fragment_loggedInRecord;
 
 public class CourseRankActivity extends AppCompatActivity {
 
@@ -17,7 +16,7 @@ public class CourseRankActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_course_rank);
+        setContentView(R.layout.login2_activity_course_rank);
 
 
         // 첫 화면에 상단 액션바(타이틀 바) 없애려고 넣음

@@ -1,6 +1,5 @@
 package com.example.ggavi.registeration.ahn1;
 
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -97,7 +96,7 @@ public class MainFragment extends Fragment
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        return inflater.inflate(R.layout.fragment_main, container, false);
+        return inflater.inflate(R.layout.login_fragment_main, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event

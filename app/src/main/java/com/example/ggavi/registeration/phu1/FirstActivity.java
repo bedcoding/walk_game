@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.ggavi.registeration.Game0_Start;
 import com.example.ggavi.registeration.ahn1.LoginActivity;
 import com.example.ggavi.registeration.ahn1.Pop;
 import com.example.ggavi.registeration.R;
@@ -42,17 +43,15 @@ public class FirstActivity extends AppCompatActivity {
         walkAwayTitle.setTypeface(font_one);
 
 
-        // 노말 모드 제거
-/*
+
         normalModeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), 노말모드.class);
+                Intent intent = new Intent(view.getContext(), Game0_Start.class);
                 startActivityForResult(intent, 0);
                 finish();
             }
         });
-*/
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,7 +67,7 @@ public class FirstActivity extends AppCompatActivity {
             public void onClick(View view) {
                 final Dialog dialog = new Dialog(FirstActivity.this);
                 dialog.requestWindowFeature(Window.FEATURE_NO_TITLE); //for title bars not to be appeared (타이틀 바 안보이게)
-                dialog.setContentView(R.layout.exp_dialog);
+                dialog.setContentView(R.layout.dialog_exp);
 
                 dialog.setCanceledOnTouchOutside(false); //to prevent dialog getting dismissed on outside touch
                 dialog.setCancelable(false); //to prevent dialog getting dismissed on back button

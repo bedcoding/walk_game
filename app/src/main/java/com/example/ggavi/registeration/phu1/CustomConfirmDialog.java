@@ -20,7 +20,7 @@ public class CustomConfirmDialog {
         final Dialog dialog;
         dialog = new Dialog(context); //here, the name of the activity class that you're writing a code in, needs to be replaced
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE); //for title bars not to be appeared (타이틀 바 안보이게)
-        dialog.setContentView(R.layout.alert_dialog); //setting view
+        dialog.setContentView(R.layout.dialog_alert); //setting view
 
         //getting textviews and buttons from dialog
         TextView dialogTitle = (TextView) dialog.findViewById(R.id.dialogTitle);

@@ -1,15 +1,11 @@
 package com.example.ggavi.registeration.phu1;
 
 import android.app.ProgressDialog;
-import android.content.Context;
-import android.content.Intent;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
-import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -149,10 +145,10 @@ public class Fragment_loggedInRecord extends Fragment {
                              Bundle savedInstanceState)
     {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_logged_in_record, container, false);
+        return inflater.inflate(R.layout.login2_fragment_logged_in_record, container, false);
 
 
-        // View view = inflater.inflate(R.layout.fragment_logged_in_record, container, false);
+        // View view = inflater.inflate(R.layout.login2_fragment_logged_in_record, container, false);
         // return view;
     }
 
