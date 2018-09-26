@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ggavi.registeration.Game4_Run"
-    android:background="#333"
+    tools:context="com.example.ggavi.registeration.game.Game4_Run"
+    android:background="@drawable/first_grad"
     android:orientation="vertical"
     android:weightSum="3.5"
     android:gravity="center"
@@ -21,7 +21,7 @@
         android:layout_height="55dp"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
-        android:background="@drawable/game_top_bar_back"
+        android:background="#00BFFF"
         android:layout_gravity="center">
 
         <TextView
@@ -60,7 +60,7 @@
                     android:layout_height="35dp"
                     android:gravity="center"
                     android:orientation="horizontal"
-                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
 
                     >
                     <ImageView
@@ -91,7 +91,7 @@
                     android:layout_height="35dp"
                     android:gravity="center"
                     android:orientation="horizontal"
-                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
 
                     >
                     <ImageView
@@ -132,7 +132,7 @@
                     android:layout_height="35dp"
                     android:gravity="center"
                     android:orientation="horizontal"
-                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
 
                     >
                     <ImageView
@@ -164,7 +164,7 @@
                     android:layout_height="35dp"
                     android:gravity="center"
                     android:orientation="horizontal"
-                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
 
                     >
                     <ImageView
@@ -241,7 +241,7 @@
                 android:layout_marginTop="5dp"
                 android:fontFamily="sans-serif-condensed"
                 android:text="(사진 설명)"
-                android:textColor="#fabe29"
+                android:textColor="#1E90FF"
                 android:textSize="18sp" />
         </ScrollView>
 
@@ -259,7 +259,7 @@
             android:layout_height="50dp"
             android:text="Stop walking"
             android:background="@drawable/game_top_bar_back"
-            android:textColor="#fabe29"
+            android:textColor="#fff"
             />
     </LinearLayout>
 

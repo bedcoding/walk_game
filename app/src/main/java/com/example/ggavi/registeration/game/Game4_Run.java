@@ -1,4 +1,4 @@
-package com.example.ggavi.registeration;
+package com.example.ggavi.registeration.game;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -17,6 +17,8 @@ import android.widget.Button;
 import android.widget.Chronometer;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.ggavi.registeration.R;
 
 import java.util.Random;
 
@@ -179,34 +181,57 @@ public class Game4_Run extends AppCompatActivity implements SensorEventListener 
                 Temp_Day++;  // 다음 날짜로 ++
 
 
-                // 다음날 배고픔, 목마름 마이너스 시키기 위해 변수 선언
+                // 1-1. 배고픔, 목마름 수치 받아오기
                 int Temp_One_Hungry = Data_Box.getInt("Family_One_Hungry", 100);
                 int Temp_Two_Hungry = Data_Box.getInt("Family_Two_Hungry", 100);
                 int Temp_One_Thirst = Data_Box.getInt("Family_One_Thirst", 100);
                 int Temp_Two_Thirst = Data_Box.getInt("Family_Two_Thirst", 100);
 
-                // 다음날 배고픔, 목마름 마이너스 시키기 위해 랜덤 함수 호출
+                // 1-2. 데미지 수치 받아오기
+                int Temp_Global_Damage = Data_Box.getInt("Global_Damage", -1);
+                int Temp_Family_One_Damage = Data_Box.getInt("Family_One_Damage", -1);
+                int Temp_Family_Two_Damage = Data_Box.getInt("Family_Two_Damage", -1);
+                int Temp_One_Hp = Data_Box.getInt("Family_One_Hp", 100);
+                int Temp_Two_Hp = Data_Box.getInt("Family_Two_Hp", 100);
+
+
+                // 21. 배고픔, 목마름 마이너스 시키기 위해 랜덤 함수 호출
                 Random r = new Random();
                 int Random_One_Value1 = r.nextInt(30 - 10) + 10;
                 int Random_One_Value2 = r.nextInt(30 - 10) + 10;
                 int Random_Two_Value1 = r.nextInt(30 - 10) + 10;
                 int Random_Two_Value2 = r.nextInt(30 - 10) + 10;
 
-                // 다음날 배고픔, 목마름 마이너스 시키기
+
+                // 3-1. 배고픔, 목마름 마이너스 시키기
                 Temp_One_Hungry = Temp_One_Hungry - Random_One_Value1;
                 Temp_Two_Hungry = Temp_Two_Hungry - Random_Two_Value1;
                 Temp_One_Thirst = Temp_One_Thirst - Random_One_Value2;
                 Temp_Two_Thirst = Temp_Two_Thirst - Random_Two_Value2;
 
-                // Day +1, 갱신된 배고픔과 목마름 숫자 삽입!!
+                // 3-2. 데미지 마이너스
+                Temp_Global_Damage = Temp_Global_Damage - Temp_Day;
+                Temp_Family_One_Damage = Temp_Family_One_Damage - Temp_Day;
+                Temp_Family_Two_Damage = Temp_Family_Two_Damage - Temp_Day;
+                Temp_One_Hp = Temp_One_Hp + Temp_Family_One_Damage;
+                Temp_Two_Hp = Temp_Two_Hp + Temp_Family_Two_Damage;
+
+
+                // 4. Day +1, 갱신된 배고픔과 목마름, 데미지 숫자 삽입!!
                 SharedPreferences.Editor editor = Data_Box.edit();
                 editor.putInt("Day", Temp_Day);
                 editor.putInt("Family_One_Hungry", Temp_One_Hungry);
                 editor.putInt("Family_Two_Hungry", Temp_Two_Hungry);
                 editor.putInt("Family_One_Thirst", Temp_One_Thirst);
                 editor.putInt("Family_Two_Thirst", Temp_Two_Thirst);
+                editor.putInt("Family_One_Hp", Temp_One_Hp);
+                editor.putInt("Family_Two_Hp", Temp_Two_Hp);
+                editor.putInt("Global_Damage", Temp_Global_Damage);
+                editor.putInt("Family_One_Damage", Temp_Family_One_Damage);
+                editor.putInt("Family_Two_Damage", Temp_Family_Two_Damage);
 
                 editor.commit();
+
 
                 // 화면 전환
                 startActivity(new Intent(Game4_Run.this, Game1_Day.class));

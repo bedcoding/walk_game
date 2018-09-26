@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.ggavi.registeration.Game2_Main"
+    tools:context="com.example.ggavi.registeration.game.Game2_Main"
     android:background="#E0FFFF"
     android:weightSum="4"
     >
@@ -20,7 +20,7 @@
         android:layout_height="55dp"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
-        android:background="@drawable/game_top_bar_back"
+        android:background="#00BFFF"
         android:layout_gravity="center">
 
         <TextView
@@ -38,6 +38,7 @@
         android:orientation="horizontal"
         android:weightSum="6"
         android:layout_marginTop="5dp"
+        android:gravity="center"
         >
         <ImageView
             android:layout_width="0dp"
@@ -63,7 +64,7 @@
             android:text="1"
             android:textColor="#00BFFF"
             android:textSize="18sp"
-            android:layout_weight="1"
+            android:layout_weight="0.5"
             android:gravity="start|center"
             />
 
@@ -92,7 +93,7 @@
             android:text="1"
             android:textColor="#00BFFF"
             android:textSize="18sp"
-            android:layout_weight="1"
+            android:layout_weight="0.5"
             android:gravity="start|center"
             />
     </LinearLayout>
@@ -101,26 +102,25 @@
         android:layout_height="35dp"
         android:gravity="center_vertical"
         >
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:src="@drawable/g0_seoul_logo"
-            android:padding="5dp"
-            android:layout_marginStart="50dp"
-            />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:gravity="center"
             >
-
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/g0_seoul_logo"
+                android:padding="5dp"
+                />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_centerHorizontal="true"
                 android:gravity="center"
-                android:text="   마력 감소량: "
+                android:text="마력 감소량: "
                 android:textColor="#00BFFF"
                 android:textSize="18sp" />
             <TextView
@@ -157,7 +157,7 @@
             android:background="@drawable/game_top_bar_back"
             android:gravity="center"
             android:text="루미의 아이템 창"
-            android:textColor="#fabe29" />
+            android:textColor="#fff" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -178,7 +178,7 @@
             android:layout_height="35dp"
             android:gravity="center"
             android:orientation="horizontal"
-            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
             >
 
             <ImageView
@@ -211,7 +211,7 @@
             android:layout_height="35dp"
             android:gravity="center"
             android:orientation="horizontal"
-            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
             >
 
             <ImageView
@@ -254,7 +254,7 @@
             android:layout_height="35dp"
             android:gravity="center"
             android:orientation="horizontal"
-            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
             >
             <ImageView
                 android:layout_width="35dp"
@@ -287,7 +287,7 @@
             android:layout_height="35dp"
             android:gravity="center"
             android:orientation="horizontal"
-            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
             >
 
             <ImageView
@@ -381,7 +381,7 @@
             android:background="@drawable/game_top_bar_back"
             android:gravity="center"
             android:text="레미의 아이템 창"
-            android:textColor="#fabe29" />
+            android:textColor="#fff" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -401,7 +401,7 @@
                     android:layout_height="35dp"
                     android:gravity="center"
                     android:orientation="horizontal"
-                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
 
                     >
                     <ImageView
@@ -433,7 +433,7 @@
                     android:layout_height="35dp"
                     android:gravity="center"
                     android:orientation="horizontal"
-                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
                     >
                     <ImageView
                         android:layout_width="35dp"
@@ -473,7 +473,7 @@
                     android:layout_height="35dp"
                     android:gravity="center"
                     android:orientation="horizontal"
-                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
                     >
                     <ImageView
                         android:layout_width="35dp"
@@ -504,7 +504,7 @@
                     android:layout_height="35dp"
                     android:gravity="center"
                     android:orientation="horizontal"
-                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
                     >
                     <ImageView
                         android:layout_width="35dp"

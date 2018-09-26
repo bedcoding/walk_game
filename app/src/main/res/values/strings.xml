@@ -87,7 +87,7 @@
 
     </string-array>
     <integer-array name="Images_Data">
-        <item>@drawable/g0_seoul_logo</item>
+        <item>@drawable/g0_seoul_simbol</item>
         <item>@drawable/g1_gangnam1</item>
         <item>@drawable/g2_gangnam2</item>
         <item>@drawable/g3_gangdong1</item>

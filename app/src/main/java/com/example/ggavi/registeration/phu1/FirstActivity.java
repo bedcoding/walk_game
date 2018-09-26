@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.ggavi.registeration.Game0_Start;
+import com.example.ggavi.registeration.game.Game0_Start;
 import com.example.ggavi.registeration.ahn1.LoginActivity;
 import com.example.ggavi.registeration.ahn1.Pop;
 import com.example.ggavi.registeration.R;

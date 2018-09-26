@@ -1,4 +1,4 @@
-package com.example.ggavi.registeration;
+package com.example.ggavi.registeration.game;
 
 import android.app.Activity;
 import android.media.MediaPlayer;
@@ -6,6 +6,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Toast;
 import android.widget.VideoView;
+
+import com.example.ggavi.registeration.R;
 
 public class Game5_DeadVideo extends Activity {
 

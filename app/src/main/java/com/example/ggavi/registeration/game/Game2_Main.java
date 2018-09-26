@@ -1,4 +1,4 @@
-package com.example.ggavi.registeration;
+package com.example.ggavi.registeration.game;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -9,6 +9,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.ggavi.registeration.R;
 
 import java.util.Random;
 
@@ -48,10 +50,12 @@ public class Game2_Main extends AppCompatActivity {
         Family_One_Thirst = Data_Box.getInt("Family_One_Thirst", 100);
         Family_One_Hp = Data_Box.getInt("Family_One_Hp", 100);
         Family_One_Damage = Data_Box.getInt("Family_One_Damage", -1);
+
         Family_Two_Hungry = Data_Box.getInt("Family_Two_Hungry", 100);
         Family_Two_Thirst = Data_Box.getInt("Family_Two_Thirst", 100);
         Family_Two_Hp = Data_Box.getInt("Family_Two_Hp", 100);
         Family_Two_Damage = Data_Box.getInt("Family_Two_Damage", -1);
+
         Water = Data_Box.getInt("Water", 1);
         Food = Data_Box.getInt("Food", 1);
         Damage = Data_Box.getInt("Global_Damage", -1);

@@ -86,21 +86,21 @@
 
 
         <!-- 게임 기능 합체 -->
-        <activity android:name=".Game0_Start" />
-        <activity android:name=".Game1_Day" />
-        <activity android:name=".Game2_Main" />
-        <activity android:name=".Game3_Item" />
-        <activity android:name=".Game4_Run" />
+        <activity android:name=".game.Game0_Start" />
+        <activity android:name=".game.Game1_Day" />
+        <activity android:name=".game.Game2_Main" />
+        <activity android:name=".game.Game3_Item" />
+        <activity android:name=".game.Game4_Run" />
         <activity
-            android:name=".Game5_EndingVideo"
+            android:name=".game.Game5_EndingVideo"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
-            android:name=".Game5_DeadVideo"
+            android:name=".game.Game5_DeadVideo"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
-            android:name=".Game5_StartVideo"
+            android:name=".game.Game5_StartVideo"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
         </activity>

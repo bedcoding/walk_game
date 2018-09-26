@@ -1,27 +1,26 @@
-package com.example.ggavi.registeration;
+package com.example.ggavi.registeration.game;
 
 import android.app.Activity;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 import android.widget.VideoView;
 
-public class Game5_EndingVideo extends Activity {
+import com.example.ggavi.registeration.R;
 
-    // 뒤로가기 버튼 변수
-    private BackPressCloseHandler backPressCloseHandler;
+public class Game5_StartVideo extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.game5_activity_video_ending);
-
-        backPressCloseHandler = new BackPressCloseHandler(this);  // 뒤로가기 버튼용 변수
+        setContentView(R.layout.game5_activity_video_start);
         VideoView vv = (VideoView) findViewById(R.id.vv);
 
         // http://www ~~~ possible
-        String uriPath = "android.resource://" + getPackageName() + "/" + R.raw.game2good;
+        String uriPath = "android.resource://" + getPackageName() + "/" + R.raw.game3start;
         Uri uri = Uri.parse(uriPath);
         vv.setVideoURI(uri);
         vv.requestFocus();
@@ -50,47 +49,17 @@ public class Game5_EndingVideo extends Activity {
                 return false;
             }
         });
-    }
 
 
-
-
-
-
-    // 뒤로가기 버튼 누를시 동작
-    @Override
-    public void onBackPressed()
-    {
-        backPressCloseHandler.onBackPressed();
-    }
-
-    public class BackPressCloseHandler {
-        private long backKeyPressedTime = 0;
-        private Toast toast;
-        private Activity activity;
-
-        public BackPressCloseHandler(Activity context) {
-            this.activity = context;
-        }
-
-        public void onBackPressed() {
-            if (System.currentTimeMillis() > backKeyPressedTime + 1000) {
-                backKeyPressedTime = System.currentTimeMillis();
-                showGuide();
-                return;
-            }
-            if (System.currentTimeMillis() <= backKeyPressedTime + 1000) {
+        // 마우스 클릭
+        Button SkipButton = findViewById(R.id.SkipButton_Id);
+        SkipButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 finish();
-                activity.finishAffinity();
-                android.os.Process.killProcess(android.os.Process.myPid());
-                toast.cancel();
             }
-        }
+        });
 
-        public void showGuide()
-        {
-            toast = Toast.makeText(activity, "뒤로가기 버튼을 한번 더 누르시면 종료됩니다.", Toast.LENGTH_SHORT);
-            toast.show();
-        }
+
     }
 }

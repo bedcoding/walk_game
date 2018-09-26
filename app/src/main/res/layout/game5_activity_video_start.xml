@@ -23,7 +23,7 @@
         <Button
             android:id="@+id/SkipButton_Id"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="match_parent"
             android:text="오프닝 동영상 Skip"
             android:background="@drawable/game_top_bar_back"
             android:textColor="#fabe29"

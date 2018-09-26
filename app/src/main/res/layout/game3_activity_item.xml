@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.ggavi.registeration.Game3_Item"
+    tools:context="com.example.ggavi.registeration.game.Game3_Item"
     android:background="#E0FFFF"
     android:weightSum="3"
     >
@@ -20,7 +20,7 @@
             android:layout_height="55dp"
             android:gravity="center_horizontal"
             android:orientation="horizontal"
-            android:background="@drawable/game_top_bar_back"
+            android:background="#00BFFF"
             android:layout_gravity="center">
 
             <TextView
@@ -33,12 +33,14 @@
                 android:text="아이템 제작"
                 />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:orientation="horizontal"
             android:weightSum="6"
             android:layout_marginTop="5dp"
+            android:gravity="center"
             >
             <ImageView
                 android:layout_width="0dp"
@@ -64,7 +66,7 @@
                 android:text="1"
                 android:textColor="#00BFFF"
                 android:textSize="18sp"
-                android:layout_weight="1"
+                android:layout_weight="0.51"
                 android:gravity="start|center"
                 />
 
@@ -93,7 +95,7 @@
                 android:text="1"
                 android:textColor="#00BFFF"
                 android:textSize="18sp"
-                android:layout_weight="1"
+                android:layout_weight="0.5"
                 android:gravity="start|center"
                 />
         </LinearLayout>
@@ -102,13 +104,7 @@
             android:layout_height="35dp"
             android:gravity="center_vertical"
             >
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:src="@drawable/g0_seoul_logo"
-                android:padding="5dp"
-                android:layout_marginStart="50dp"
-                />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -116,15 +112,23 @@
                 android:gravity="center"
                 >
 
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/g0_seoul_logo"
+                    android:padding="5dp"
+                    />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_centerHorizontal="true"
                     android:gravity="center"
-                    android:text="   마력 감소량: "
+                    android:text="마력 감소량: "
                     android:textColor="#00BFFF"
                     android:textSize="18sp" />
                 <TextView
+                    android:id="@+id/Damage_Amount_View_Id"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="1"
@@ -157,7 +161,7 @@
             android:background="@drawable/game_top_bar_back"
             android:gravity="center"
             android:text="루미의 아이템 창"
-            android:textColor="#fabe29" />
+            android:textColor="#fff" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -184,9 +188,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
                     android:text="필요한 재료 : 음식 10, 물 5"
-                    android:textColor="#fabe29"
+                    android:textColor="#00BFFF"
                     android:textSize="18sp" />
             </LinearLayout>
 
@@ -205,9 +209,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
                     android:text="마법돌 제작 : 루미의 마력 변화량 5++"
-                    android:textColor="#fabe29"
+                    android:textColor="#00BFFF"
                     android:textSize="18sp" />
             </LinearLayout>
         </LinearLayout>
@@ -247,7 +251,7 @@
             android:background="@drawable/game_top_bar_back"
             android:gravity="center"
             android:text="레미의 아이템 창"
-            android:textColor="#fabe29" />
+            android:textColor="#fff" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -273,10 +277,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
                     android:gravity="center"
                     android:text="필요한 재료 : 음식 10, 물 5"
-                    android:textColor="#fabe29"
+                    android:textColor="#00BFFF"
                     android:textSize="18sp" />
             </LinearLayout>
             <LinearLayout
@@ -293,10 +297,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
                     android:gravity="center"
                     android:text="마법돌 제작 : 레미의 마력 변화량 5++"
-                    android:textColor="#fabe29"
+                    android:textColor="#00BFFF"
                     android:textSize="18sp" />
             </LinearLayout>
         </LinearLayout>

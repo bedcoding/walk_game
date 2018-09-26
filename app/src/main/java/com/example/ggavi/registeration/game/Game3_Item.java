@@ -1,4 +1,4 @@
-package com.example.ggavi.registeration;
+package com.example.ggavi.registeration.game;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -10,11 +10,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.ggavi.registeration.R;
+
 public class Game3_Item extends AppCompatActivity {
 
-    private int Food, Water;
+    private int Food, Water, Damage;
     private SharedPreferences Data_Box;
-    private TextView Food_Amount_View, Water_Amount_View;
+    private TextView Food_Amount_View, Water_Amount_View, Damage_View;
     int Reduced_Family_One_Damage, Reduced_Family_Two_Damage;
     AlertDialog.Builder New_Alert_Dialog;  // 다이어로그 띄우기 ('아이템을 구매할 수 없습니다!')
 
@@ -40,9 +42,13 @@ public class Game3_Item extends AppCompatActivity {
     private void Initiating_Views() {
         Food = Data_Box.getInt("Food", 1);
         Water = Data_Box.getInt("Water", 1);
+        Damage = Data_Box.getInt("Global_Damage", -1);
+
 
         Food_Amount_View = findViewById(R.id.Food_Amount_View_GetItem_Id);
         Water_Amount_View = findViewById(R.id.Water_Amount_View_GetItem_Id);
+        Damage_View = findViewById(R.id.Damage_Amount_View_Id);
+
         Get_And_Update();
         final Button Family_One_Buy = findViewById(R.id.Family_One_Buy_Button_Id);
         final Button Family_Two_Buy = findViewById(R.id.Family_Two_Buy_Button_Id);
@@ -102,6 +108,7 @@ public class Game3_Item extends AppCompatActivity {
         Temp_Family_Two_Damage = Temp_Family_Two_Damage + Reduced_Family_Two_Damage;
         Food_Amount_View.setText(Food + "");
         Water_Amount_View.setText(Water + "");
+        Damage_View.setText(Damage+"");
         SharedPreferences.Editor Editor = Data_Box.edit();
         Editor.putInt("Food", Food);
         Editor.putInt("Water", Water);
