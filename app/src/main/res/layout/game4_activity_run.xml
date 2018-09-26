@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ggavi.registeration.game.Game4_Run"
+    tools:context="com.example.ggavi.registeration.game_mode.Game4_Run"
     android:background="@drawable/first_grad"
     android:orientation="vertical"
     android:weightSum="3.5"

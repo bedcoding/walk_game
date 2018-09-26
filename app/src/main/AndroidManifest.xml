@@ -13,12 +13,15 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
-    <!-- 반장님이 한거 합침 -->
+    <!--
+    &lt;!&ndash; 반장님이 한거 합침(아두이노 부품 조립해서 심박수 측정후 문자 보내는 기능 : 현재 삭제) &ndash;&gt;
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    -->
+
 
     <!-- (28)어플 로고 아이콘, 제목 변경 / label을 수정해서 상단바 글자 설정 -->
     <!-- 푸푸씨가 넣은 사진첨부 기능 용량초과로 터지길래 구글링해서 밑에 2줄 넣음 -->
@@ -38,7 +41,7 @@
 
         <!-- (24)어플 켤때 나오는 스플래시 이미지 넣기 / label 수정해서 어플 이름 변경 -->
         <activity
-            android:name=".ahn1.Splashscreen"
+            android:name=".Splashscreen"
             android:label="Walk Away">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -49,7 +52,7 @@
         </activity>
 
         <!-- 처음에 틀 때 실행되는 액티비티 -->
-        <activity android:name=".ahn1.LoginActivity">
+        <activity android:name=".nomal_mode.a_LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -57,50 +60,52 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ahn1.RegisterActivity" />
+        <activity android:name=".nomal_mode.a_RegisterActivity" />
         <activity
-            android:name=".ahn1.MainActivity"
+            android:name=".nomal_mode.a_LoginMainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
+
+        <!-- 구글맵 API (내 버전) -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBCp3lZh41I65rj1JPHKzB1hMSBu7ASdtU " />
+            android:value="AIzaSyBcK9fnze-9DmcdvqBYudSo3N4PF9r7eGc" />
+
 
         <!-- (26)메인 화면에 개발자 버튼 추가 -->
         <activity
-            android:name=".ahn1.Pop"
+            android:name=".Pop"
             android:theme="@style/AppTheme.Pop" />
-        <activity android:name=".phu1.FirstActivity" />
-        <activity android:name=".phu1.LoggedInWalk" />
-        <activity android:name=".phu1.LoggedInRecord" />
-        <activity android:name=".phu1.SettingActivity" />
+        <activity android:name=".FirstActivity" />
+        <activity android:name=".nomal_mode.LoggedInWalk" />
+        <activity android:name=".nomal_mode.LoggedInRecord" />
+        <activity android:name=".nomal_mode.SettingActivity" />
 
 
 
         <!-- 푸푸씨 꺼 또 합침 -->
-        <activity android:name=".phu1.ProfilePicture" />
-        <activity android:name=".phu1.ProfilePictureUpload" />
+        <activity android:name=".nomal_mode.ProfilePicture" />
+        <activity android:name=".nomal_mode.ProfilePictureUpload" />
 
         <!-- 추가 -->
-        <activity android:name=".ahn1.CourseRankActivity" />
 
 
         <!-- 게임 기능 합체 -->
-        <activity android:name=".game.Game0_Start" />
-        <activity android:name=".game.Game1_Day" />
-        <activity android:name=".game.Game2_Main" />
-        <activity android:name=".game.Game3_Item" />
-        <activity android:name=".game.Game4_Run" />
+        <activity android:name=".game_mode.Game0_Start" />
+        <activity android:name=".game_mode.Game1_Day" />
+        <activity android:name=".game_mode.Game2_Main" />
+        <activity android:name=".game_mode.Game3_Item" />
+        <activity android:name=".game_mode.Game4_Run" />
         <activity
-            android:name=".game.Game5_EndingVideo"
+            android:name=".game_mode.Game5_EndingVideo"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
-            android:name=".game.Game5_DeadVideo"
+            android:name=".game_mode.Game5_DeadVideo"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
-            android:name=".game.Game5_StartVideo"
+            android:name=".game_mode.Game5_StartVideo"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
         </activity>

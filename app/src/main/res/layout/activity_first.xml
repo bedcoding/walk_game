@@ -89,7 +89,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:background="@drawable/first_button_two"
-                    android:text="log in"
+                    android:text="Normal Mode"
                     android:textColor="#ffffff"
                     android:textSize="20dp"
                     android:textStyle="bold" />
@@ -105,7 +105,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="3dp"
             android:gravity="center"
-            android:text="BUFS BIT Advanced Course 4th Batch 'Palette'"
+            android:text="BUFS 'Palette'"
             android:textColor="#9c9c9c"
             android:textSize="12dp" />
     </RelativeLayout>

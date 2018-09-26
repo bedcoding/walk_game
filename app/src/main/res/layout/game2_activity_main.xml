@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.ggavi.registeration.game.Game2_Main"
+    tools:context="com.example.ggavi.registeration.game_mode.Game2_Main"
     android:background="#E0FFFF"
     android:weightSum="4"
     >

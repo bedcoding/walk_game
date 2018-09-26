@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ggavi.registeration.phu1.ProfilePicture"
+    tools:context="com.example.ggavi.registeration.nomal_mode.ProfilePicture"
     android:background="#ffffff">
 
     <LinearLayout

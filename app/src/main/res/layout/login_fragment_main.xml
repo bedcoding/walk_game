@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ggavi.registeration.ahn1.MainFragment">
+    tools:context="com.example.ggavi.registeration.nomal_mode.a_LoginMainFragment">
 
 
     <!-- Switch Screen Screen-->
@@ -23,19 +23,20 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:orientation="vertical">
 
                 <ImageButton
                     android:id="@+id/walk_imageButton"
                     android:layout_width="250dp"
                     android:layout_height="250dp"
-                    android:background="@drawable/walk_round_click"
-                    android:contentDescription="walk_away_image_button" />
+                    android:background="@drawable/walk_round_click" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
                 android:paddingTop="15dp">
 
                 <TextView
